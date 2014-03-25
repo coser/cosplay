@@ -1,5 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+//接口类   主要实现 访问请求http接口
 class MY_Interface {
     private $cos_private_key;
 	private $response = false;
@@ -38,7 +39,10 @@ class MY_Interface {
 
         curl_setopt($ch,CURLOPT_URL,$url);
         curl_setopt($ch,CURLOPT_TIMEOUT,3);
-		curl_setopt($ch,CURLOPT_RETURNTRANSFER, TRUE); 
+		
+		//可以将这行注释来打印接口输出 注释用于调试
+		curl_setopt($ch,CURLOPT_RETURNTRANSFER, TRUE);
+		
         curl_setopt($ch,CURLOPT_POST,true);
         curl_setopt($ch,CURLOPT_POSTFIELDS,http_build_query($params_array));
 
@@ -54,11 +58,13 @@ class MY_Interface {
 
 	}
 
+	//返回原始结果
 	public function result(){
 		return $this->response;
 		
 	}
 	
+	//返回数组结果
 	public  function result_array(){
 		$res = array();
 		if($this->response != false){

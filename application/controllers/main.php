@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Main extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -19,13 +19,8 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->library('user');
-		//$a = $this->user->do_register(array('email'=>'6666@qq.com','password'=>'22225552','position'=>'test','nickname'=>'5555'));
-		//print_r($a);
 		
-		$a = $this->user->do_login(array('email'=>'6666@qq.com','password'=>'22225552','position'=>'test'));
-		print_r($a);
-		$this->load->view('welcome_message');
+		$this->load->view('main');
 	}
 }
 
