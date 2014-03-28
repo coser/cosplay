@@ -1,5 +1,5 @@
 <?php $this->load->view('/public/general-header'); ?>
-<div class="showmain-pageheader">
+<div class="general-pageheader">
 	<div class="container">
 		<h1 class="navigate"><a href="/show">动漫</a><span>/</span><a href="/show/catelist">海贼王</a><span>/</span><strong>redback1020</strong></h1>
 		<div class="clear"></div>
@@ -44,17 +44,19 @@
 	</div>
 	<div class="right-block">
 		<div class="author-box">
-			<div class="mark">
-				<img class="avatar" src="/resource/images/test.jpg">
-				<h3>redback1020</h3>
-				<div><img class="icon" src="/resource/images/home.png"><a href="">cos社团</a></div>
-				<div><img class="icon" src="/resource/images/heart.png"><span>4444</span></div>
-				<div><img class="icon" src="/resource/images/eye.png"><span>12444</span></div>
+			<img class="avatar" src="/resource/images/test.jpg">
+			<h3>redback1020</h3>
+			<div>
+				<img class="icon" src="/resource/images/heart.png"><span>4444</span>
+				<img class="icon" src="/resource/images/eye.png"><span>12444</span>
+			</div>
+			<div class="societies">
+				<img class="societies-cover" src="/resource/images/test.jpg"><a href="">cos社团</a>
 			</div>
 		</div>
 		<div class="like">
 			<p>如果你喜欢该作品点个赞</p>
-			<a href="" class="actionbutton-gray">赞</a>
+			<a href="" class="actionbutton-green">赞</a>
 		</div>
 		<div class="comment">
 			<form>

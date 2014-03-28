@@ -1,5 +1,5 @@
 <?php $this->load->view('/public/general-header'); ?>
-<div class="showmain-pageheader">
+<div class="general-pageheader">
 	<div class="container">
 		<h1 class="navigate"><a href="/show">动漫</a><span>/</span><strong>海贼王</strong></h1>
 		<div class="clear"></div>
@@ -8,7 +8,7 @@
 <div class="container showcatelist">
 	<div class="left-block">
 		<div class="button-group">
-			<a href="/" class=" first-child selected">按最新</a>
+			<a href="/" class=" first-child selected">按最新上传</a>
 			<a href="/">按喜欢最高</a>
 			<a href="/" class="last-child">按点击最高</a>
 			<div class="clear"></div>

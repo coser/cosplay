@@ -1,5 +1,5 @@
 <?php $this->load->view('/public/general-header'); ?>
-<div class="showmain-pageheader">
+<div class="general-pageheader">
 	<div class="container">
 		<h1 class="title">cos图集<span>Pictures</span></h1>
 		<ul>
@@ -85,7 +85,7 @@
 	<div class="right-block">
 		<div class="showmain-please-upload">
 			<p>上传你的作品分享它们</p>
-			<a class="actionbutton-gray" href="">上传cos作品</a>
+			<a class="actionbutton-green" href="">上传cos作品</a>
 		</div>
 		<div class="box">
 			<div class="box-header">

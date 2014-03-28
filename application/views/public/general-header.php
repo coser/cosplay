@@ -10,10 +10,13 @@
 	<div class="general-header">
 		<div class="container">
 			<a class="logo" href="/main"><img src="/resource/images/logo.png"</a>
+			<a class="actionbutton-gray" href="/user">
+				<img class="avatar" src="/resource/images/test.jpg"><span>redback1020</span>
+			</a>
 			<a class="actionbutton-green">登陆</a>
 			<ul class="menu">
-				<li><a href="">cos图集</a></li>
-				<li><a href="">cos社团</a></li>
+				<li><a href="/show">cos图集</a></li>
+				<li><a href="/societies">cos社团</a></li>
 			</ul>
 			<div class="clear"></div>
 		</div>

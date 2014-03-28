@@ -35,10 +35,12 @@ a:hover{color: rgb(65, 131, 196);}
     border-radius: 3px;
     border: 1px solid rgb(213, 213, 213);
     vertical-align: middle;
-    cursor: pointer;   
-    
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 18px
 }
-
+.actionbutton-gray img.avatar{ width: 18px; height: 18px;float: left;margin-right: 5px}
+.actionbutton-gray span{float: left}
 .actionbutton-gray:hover{
     background-color: rgb(221, 221, 221);
     background-image: linear-gradient(rgb(238, 238, 238), rgb(221, 221, 221));
@@ -55,20 +57,20 @@ a:hover{color: rgb(65, 131, 196);}
     color: rgb(255, 255, 255);
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
     white-space: nowrap;
-    background-color: rgb(96, 176, 68);
-    background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
+    background-color: rgb(86, 158, 61);
+    background-image: linear-gradient(rgb(121, 216, 88), rgb(86, 158, 61));
     background-repeat: repeat-x;
     border-color: rgb(74, 153, 62); 
     border-radius: 3px;
     border: 1px solid rgb(92, 169, 65);
     vertical-align: middle;
     cursor: pointer;   
-    
+    line-height: 18px;
 }
 
 .actionbutton-green:hover{
-    background-color: rgb(86, 158, 61);
-    background-image: linear-gradient(rgb(121, 216, 88), rgb(86, 158, 61));
+    background-color: rgb(96, 176, 68);
+    background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
     background-repeat: repeat-x;
     color: rgb(255, 255, 255);
 }
@@ -87,7 +89,9 @@ a:hover{color: rgb(65, 131, 196);}
     background-color: rgb(238, 238, 238);
     background-image: linear-gradient(rgb(252, 252, 252), rgb(238, 238, 238));
     background-repeat: repeat-x;
-    border: 1px solid rgb(213, 213, 213);
+    border-top: 1px solid rgb(213, 213, 213);
+    border-bottom: 1px solid rgb(213, 213, 213);
+    border-left: 1px solid rgb(213, 213, 213);
     vertical-align: middle;
     cursor: pointer;
 }
@@ -105,6 +109,7 @@ a:hover{color: rgb(65, 131, 196);}
 .button-group a.last-child{
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
+    border-right: 1px solid rgb(213, 213, 213);
 }
 
 .button-group .selected{
@@ -124,8 +129,26 @@ a:hover{color: rgb(65, 131, 196);}
 .general-header ul{float: right;margin-right:50px;}
 .general-header ul li{float: left;padding:0px 15px;line-height: 44px}
 .general-header ul li a{font:14px bold;}
-.general-header a.actionbutton-green{float: right;margin-top:6px;}
+.general-header a.actionbutton-green,.general-header a.actionbutton-gray{float: right;margin:8px 5px 0px 0px;padding:4px 6px;line-height: 18px;}
 
+/*通用title*/
+.general-title{margin-bottom: 5px;overflow: hidden;height: 30px}
+.general-title h3{font-size: 18px;color: rgb(0, 0, 0);float: left;line-height: 30px;margin-right: 5px}
+.general-title h3 span{color: rgb(128, 128, 128);margin: 0px 5px;font-size: 14px}
+.general-title a.actionbutton-gray{float: left;padding: 4px 6px;line-height: 14px}
+
+.general-pageheader{height: 81px;border-bottom: 1px solid rgb(238, 238, 238);margin-bottom: 20px}
+.general-pageheader h1{font: 22px;line-height:80px;display: inline-block;float: left}
+.general-pageheader h1.title span{font-size: 20px;color: rgb(128, 128, 128);margin: 0px 5px}
+.general-pageheader h1.navigate a{color: rgb(65, 131, 196)}
+.general-pageheader h1.navigate span{margin: 0px 10px;font-weight: normal}
+.general-pageheader h1.navigate strong{font-size: 20px;color: rgb(128, 128, 128);}
+.general-pageheader .actionbutton-gray{padding: 4px 6px;float: left;margin:25px 0px 0px 5px;line-height: 14px}
+
+.general-pageheader ul{float: right}
+.general-pageheader ul li{float: left}
+.general-pageheader ul li a{display:block;border-bottom: 2px solid #fff; font-size: 14px;line-height: 78px;margin: 0px 10px}
+.general-pageheader ul li a.selected{border-bottom-color: rgb(210, 105, 17);}
 
 
 /*通用box*/
@@ -165,13 +188,19 @@ a:hover{color: rgb(65, 131, 196);}
 .box .box-body .box-ul-list li{border-bottom: 1px solid rgb(213, 213, 213); }
 .box .box-body .box-ul-list li:last-child{border: none}
 
+/*通用feedlist*/
+.general-feedlist{}
+
+
+
+
 /*首页*/
 .index-header{height: 81px;border-bottom: 1px solid #ccc}
 .index-header a.logo{ font: 32px/80px bold;  color:#000000;float: left}
 .index-header ul{float: right;margin-right:50px;}
 .index-header ul li{float: left;padding:0px 15px;line-height: 80px}
 .index-header ul li a{font:18px bold;}
-.index-header a.actionbutton-gray{float: right;margin-top: 24px}
+.index-header a.actionbutton-gray{float: right;margin-top: 24px;line-height: 14px}
 
 .index-markblock{height:500px;background: url('/resource/images/main-bg.png') repeat-x;padding-top:50px}
 .index-markblock .info-box{ float: left;width: 500px}
@@ -214,17 +243,6 @@ a:hover{color: rgb(65, 131, 196);}
 
 
 /*showmain*/
-.showmain-pageheader{height: 81px;border-bottom: 1px solid rgb(238, 238, 238);margin-bottom: 20px}
-.showmain-pageheader h1{font: 22px;line-height:80px;display: inline-block}
-.showmain-pageheader h1.title span{font-size: 20px;color: rgb(128, 128, 128);margin: 0px 5px}
-.showmain-pageheader h1.navigate a{color: rgb(65, 131, 196)}
-.showmain-pageheader h1.navigate span{margin: 0px 10px;font-weight: normal}
-.showmain-pageheader h1.navigate strong{font-size: 20px;color: rgb(128, 128, 128);}
-
-.showmain-pageheader ul{float: right}
-.showmain-pageheader ul li{float: left}
-.showmain-pageheader ul li a{display:block;border-bottom: 2px solid #fff; font-size: 14px;line-height: 78px;margin: 0px 10px}
-.showmain-pageheader ul li a.selected{border-bottom-color: rgb(210, 105, 17);}
 
 .showmain-category-tips{text-align: right;font-size: 12px;line-height: 30px}
 .showmain-category-tips a{color:rgb(65, 131, 196)}
@@ -268,18 +286,19 @@ a:hover{color: rgb(65, 131, 196);}
 .showinfo .showinfo-list p{float: left;font-size:22px;margin-right: 15px;}
 .showinfo .showinfo-list ul{float: left}
 
-.showinfo .author-box{border: 1px solid rgb(238, 238, 238);padding: 5px;border-radius: 3px;}
+.showinfo .author-box{border: 1px solid rgb(238, 238, 238);padding: 10px;border-radius: 3px;}
 .showinfo .author-box .avatar{width: 150px;height: 150px}
 .showinfo .author-box h3{margin:5px 0px;font-size: 24px}
-.showinfo .author-box .mark{background: rgb(245, 245, 245);padding: 5px}
-.showinfo .author-box .mark div{overflow: hidden;padding: 5px 0px}
-.showinfo .author-box .mark div img.icon{width: 12px;height: 12px;margin-right: 10px;}
-.showinfo .author-box .mark div a,.showinfo .author-box div span,.showinfo .author-box div img.icon{float: left}
-.showinfo .author-box .mark div a{color: rgb(65, 131, 196);}
-.showinfo .author-box .mark div span{color:rgb(128, 128, 128);}
+.showinfo .author-box div{overflow: hidden;padding: 5px 0px}
+.showinfo .author-box div img.icon{width: 12px;height: 12px;}
+.showinfo .author-box div a,.showinfo .author-box div span,.showinfo .author-box div img.icon{float: left}
+.showinfo .author-box div span{color:rgb(128, 128, 128);margin:0px 10px}
+.showinfo .author-box div.societies{border-top: 1px solid rgb(238, 238, 238);padding-top: 15px;margin-top: 10px}
+.showinfo .author-box div.societies img.societies-cover{float: left;width: 30px;height: 30px;margin-right: 10px}
+.showinfo .author-box div.societies a{font-size: 16px;float: left;line-height: 30px}
 
-.showinfo .like{margin-top:20px;}
-.showinfo .like p{color:rgb(128, 128, 128);line-height: 22px}
+.showinfo .like{margin-top:20px;border-top: 1px solid rgb(238, 238, 238);border-bottom:1px solid rgb(238, 238, 238);padding: 20px 0px}
+.showinfo .like p{color:rgb(128, 128, 128);line-height: 22px  }
 
 .showinfo .comment{margin-top:20px;}
 .showinfo .comment textarea{resize: none;width: 100%;height: 50px;border: 1px solid #ccc;border-radius: 3px;padding: 5px; color:rgb(128, 128, 128); font-size: 12px}
@@ -292,3 +311,54 @@ a:hover{color: rgb(65, 131, 196);}
 .showinfo .comment ul li .content{color: rgb(128, 128, 128);line-height: 22px;padding-left: 5px}
 .showinfo .comment ul li .content a{color:#000;font-weight: bold;margin-right:10px}
 .showinfo .comment ul li .reply{text-align: left;margin-top:5px;margin-left: 30px;padding:0px 5px;float: left;width: 240px;background: rgb(245, 245, 245);line-height: 22px}
+
+
+/*societies-main*/
+.societies-list{margin-top: 10px}
+.societies-list li{border-bottom: 1px solid rgb(238, 238, 238);padding-bottom:20px;margin-bottom: 15px}
+.societies-list li .cover{width: 100px;height: 100px;float: left;margin-right: 10px}
+.societies-list li .info{float: left;}
+.societies-list li .info h3{font-size: 18px;line-height: 24px}
+.societies-list li .description{color: rgb(128, 128, 128);line-height: 22px;height: 50px;width: 450px}
+.societies-list li .base-info table td{vertical-align: center;line-height: 22px;padding: 0px 10px 0px 0px;color: rgb(128, 128, 128);}
+.societies-list li .base-info table td.title{color: rgb(0, 0, 0);}
+.societies-list li .base-info table td img{width: 20px;height: 20px;float: left;margin-right: 5px}
+.societies-list li .base-info table td a{float: left;color: rgb(65, 131, 196);}
+
+
+.societies-main-please-create{margin-bottom: 20px}
+.societies-main-please-create p{line-height: 28px;color: rgb(128, 128, 128);}
+.societies-main-please-create a{width: 200px;text-align: center}
+
+/*societies-info*/
+.societies-info .societies-bulletin{padding: 10px ;line-height: 22px;color: rgb(85,85,85);background: rgb(245,245,245);margin-bottom: 30px}
+
+.societies-info .societies-feedlist{margin-bottom: 30px}
+.societies-info .societies-feedlist li{line-height: 30px;padding: 5px 0px;border-bottom: 1px solid rgb(238,238,238)}
+.societies-info .societies-feedlist li .avatar{width: 30px;height: 30px;float: left;margin-right: 5px}
+.societies-info .societies-feedlist li b{float: left;margin-right: 5px}
+.societies-info .societies-feedlist li p{float: left;width: 530px;color: rgb(85,85,85);}
+.societies-info .societies-feedlist li p span{color: rgb(128, 128, 128);margin: 0px 5px}
+
+.societies-info .societies-userlist li{float: left;width: 150px;line-height: 30px;padding: 0px 10px 10px 0px}
+.societies-info .societies-userlist li .avatar{float: left;width: 30px;height: 30px;margin-right: 5px}
+.societies-info .societies-userlist li a{float: left;}
+
+.societies-info .societies-show-newest{margin-bottom: 30px}
+.societies-info .societies-show-newest li{float: left;margin: 0px 10px 15px 0px;padding: 10px;border-radius: 3px;border: 1px solid rgb(238, 238, 238)}
+.societies-info .societies-show-newest li img{width: 180px;height:180px}
+.societies-info .societies-show-newest li .info{line-height: 22px;color:rgb(128, 128, 128);}
+.societies-info .societies-show-newest .info img.icon{width: 10px;height: 10px;}
+.societies-info .societies-show-newest .info span{margin: 0px 10px}
+.societies-info .societies-show-newest .author{margin-top: 5px}
+.societies-info .societies-show-newest .author img{float: left;width: 22px;height: 22px;margin-right: 10px}
+.societies-info .societies-show-newest .author a{float:left;line-height: 22px}
+
+.societies-info .societies-info-box{}
+.societies-info .societies-info-box .cover{width: 150px;height: 150px}
+.societies-info .societies-info-box h3{margin:5px 0px;font-size: 24px}
+.societies-info .societies-info-box table{width: 100%;border-top: 1px solid rgb(238,238,238);margin-top: 20px}
+.societies-info .societies-info-box table tr td{font-size:14px;line-height: 20px;color: rgb(128, 128, 128);padding: 5px 0px}
+.societies-info .societies-info-box table tr td.title{width: 50px;color: rgb(0,0,0)}
+.societies-info .societies-info-box table tr td .avatar{width: 20px;height: 20px;float: left;margin-right: 5px}
+.societies-info .societies-info-box table tr td a{line-height: 20px;float: left}
