@@ -9,10 +9,10 @@
 <body>
 	<div class="index-header">
 		<div class="container">
-			<a class="logo" href="">WeAreCoser</a>
-			<a class="button-action">登陆</a>
+			<a class="logo" href="/main">WeAreCoser</a>
+			<a class="actionbutton-gray">登陆</a>
 			<ul class="menu">
-				<li><a href="">cos美图</a></li>
+				<li><a href="/show">cos图集</a></li>
 				<li><a href="">cos社团</a></li>
 			</ul>
 			
@@ -31,7 +31,7 @@
 						<dd><input type="text"  placeholder="使用的昵称"></input></dd>
 						<dd><input type="text"  placeholder="登陆密码"></input></dd>
 					</dl>
-					<button class="button" type="submit">注册成为我们的一员</button>
+					<button class="actionbutton-green" type="submit">注册成为我们的一员</button>
 				</form>
 			</div>
 		</div>	

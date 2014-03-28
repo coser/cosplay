@@ -1,5 +1,5 @@
 html { background: none repeat scroll 0 0 #FFFFFF; color: #000000;}
-body{ font-family:"Microsoft YaHei","MicrosoftJhengHei","STHeiti","MingLiu"; background-color: #FFF; font-size: 12px }
+body{ font-family:Microsoft YaHei,MicrosoftJhengHei; background-color: #FFF; font-size: 12px }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0;padding: 0;}
 table { border-collapse: collapse; border-spacing: 0;}
 fieldset, img { border: 0 none;}
@@ -11,16 +11,22 @@ a:hover{color: rgb(65, 131, 196);}
 * {
     -moz-box-sizing: border-box;
 }
-.clear{clear: both}
+.clear{clear: both;height: 0px;}
 .container{width: 980px;margin: 0px auto}
 
+/*通用布局*/
+.right-block{float: right;width: 280px}
+.left-block{float: left;width: 650px}
 
-a.button-action{
+
+/*通用按钮*/
+.actionbutton-gray{
+    text-decoration: none;
     display: inline-block;
     padding: 7px 12px;
     font-size: 13px;
     font-weight: bold;
-    color: rgb(51, 51, 51);
+    color: rgb(85, 85, 85);
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.9);
     white-space: nowrap;
     background-color: rgb(238, 238, 238);
@@ -29,45 +35,143 @@ a.button-action{
     border-radius: 3px;
     border: 1px solid rgb(213, 213, 213);
     vertical-align: middle;
-    cursor: pointer;
+    cursor: pointer;   
+    
 }
-a.button-action:hover{
-    text-decoration: none;
+
+.actionbutton-gray:hover{
     background-color: rgb(221, 221, 221);
     background-image: linear-gradient(rgb(238, 238, 238), rgb(221, 221, 221));
     background-repeat: repeat-x;
-    border-color: rgb(204, 204, 204);
-    
+    color: rgb(85, 85, 85);
 }
 
-.button{
+.actionbutton-green{
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 12px;
+    font-size: 13px;
+    font-weight: bold;
     color: rgb(255, 255, 255);
     text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.25);
+    white-space: nowrap;
     background-color: rgb(96, 176, 68);
     background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
     background-repeat: repeat-x;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border:none;
-    cursor: pointer;
-}
-
-.button:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(86, 158, 61);
-    background-image: linear-gradient(rgb(121, 216, 88), rgb(86, 158, 61));
-    background-repeat: repeat-x;
-    border-color: rgb(74, 153, 62);
+    border-color: rgb(74, 153, 62); 
+    border-radius: 3px;
+    border: 1px solid rgb(92, 169, 65);
+    vertical-align: middle;
+    cursor: pointer;   
     
 }
 
-.index-header{padding: 15px 0px;border: 1px solid #ccc}
-.index-header a.logo{ font: 32px bold;  color:#000000;float: left}
-.index-header ul{float: right;margin-right:50px;padding-top:6px}
-.index-header ul li{float: left;padding:0px 15px}
+.actionbutton-green:hover{
+    background-color: rgb(86, 158, 61);
+    background-image: linear-gradient(rgb(121, 216, 88), rgb(86, 158, 61));
+    background-repeat: repeat-x;
+    color: rgb(255, 255, 255);
+}
+
+
+.button-group a{
+    float:left;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(85, 85, 85);
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
+    background-color: rgb(238, 238, 238);
+    background-image: linear-gradient(rgb(252, 252, 252), rgb(238, 238, 238));
+    background-repeat: repeat-x;
+    border: 1px solid rgb(213, 213, 213);
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.button-group a:hover{
+    background-color: rgb(221, 221, 221);
+    background-image: linear-gradient(rgb(238, 238, 238), rgb(221, 221, 221));
+    background-repeat: repeat-x;
+    color: rgb(85, 85, 85);
+}
+.button-group a.first-child{
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.button-group a.last-child{
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.button-group .selected{
+    background-color: rgb(220, 220, 220);
+    background-image: none;
+    border-color: rgb(181, 181, 181);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15) inset;   
+}
+
+/*通用header*/
+.general-header{
+    border-bottom: 1px solid #ccc;height: 45px;
+    background-color: rgb(243, 243, 243);
+    background-image: linear-gradient(rgb(249, 249, 249), rgb(243, 243, 243));
+    background-repeat: repeat-x;}
+.general-header a.logo img{ width: 35px;height: 30px;float: left;margin-top: 6px }
+.general-header ul{float: right;margin-right:50px;}
+.general-header ul li{float: left;padding:0px 15px;line-height: 44px}
+.general-header ul li a{font:14px bold;}
+.general-header a.actionbutton-green{float: right;margin-top:6px;}
+
+
+
+/*通用box*/
+.box{}
+.box .box-header{
+    padding: 0px 10px;
+    height:31px;
+    background-color: rgb(234, 234, 234);
+    background-image: linear-gradient(rgb(250, 250, 250), rgb(234, 234, 234));
+    background-repeat: repeat-x;
+    border: 1px solid rgb(213, 213, 213);
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.box .box-header h3{
+    float: left;
+    font-size: 14px;
+    line-height: 30px;
+    color: rgb(85, 85, 85);
+}
+.box .box-header h3 span{color: rgb(128, 128, 128);margin: 0px 5px;font-size: 12px}
+.box .box-body{
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: rgb(213, 213, 213);
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    border-width: 0px 1px 1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.box .box-body .box-ul-list{width: 100%}
+.box .box-body .box-ul-list li{border-bottom: 1px solid rgb(213, 213, 213); }
+.box .box-body .box-ul-list li:last-child{border: none}
+
+/*首页*/
+.index-header{height: 81px;border-bottom: 1px solid #ccc}
+.index-header a.logo{ font: 32px/80px bold;  color:#000000;float: left}
+.index-header ul{float: right;margin-right:50px;}
+.index-header ul li{float: left;padding:0px 15px;line-height: 80px}
 .index-header ul li a{font:18px bold;}
-.index-header a.button-action{float: right}
+.index-header a.actionbutton-gray{float: right;margin-top: 24px}
 
 .index-markblock{height:500px;background: url('/resource/images/main-bg.png') repeat-x;padding-top:50px}
 .index-markblock .info-box{ float: left;width: 500px}
@@ -88,7 +192,7 @@ a.button-action:hover{
     border-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.075) inset, 0px 0px 12px rgba(255, 255, 255, 0.75);
 }
-.index-markblock .register-box button{width: 100%;margin:10px 0px}
+.index-markblock .register-box .actionbutton-green{width: 100%;margin:10px 0px;border-radius: 5px;font-size: 16px;padding: 10px;}
 
 
 .index-businessblock{padding:100px 0px;}
@@ -107,3 +211,84 @@ a.button-action:hover{
 
 
 
+
+
+/*showmain*/
+.showmain-pageheader{height: 81px;border-bottom: 1px solid rgb(238, 238, 238);margin-bottom: 20px}
+.showmain-pageheader h1{font: 22px;line-height:80px;display: inline-block}
+.showmain-pageheader h1.title span{font-size: 20px;color: rgb(128, 128, 128);margin: 0px 5px}
+.showmain-pageheader h1.navigate a{color: rgb(65, 131, 196)}
+.showmain-pageheader h1.navigate span{margin: 0px 10px;font-weight: normal}
+.showmain-pageheader h1.navigate strong{font-size: 20px;color: rgb(128, 128, 128);}
+
+.showmain-pageheader ul{float: right}
+.showmain-pageheader ul li{float: left}
+.showmain-pageheader ul li a{display:block;border-bottom: 2px solid #fff; font-size: 14px;line-height: 78px;margin: 0px 10px}
+.showmain-pageheader ul li a.selected{border-bottom-color: rgb(210, 105, 17);}
+
+.showmain-category-tips{text-align: right;font-size: 12px;line-height: 30px}
+.showmain-category-tips a{color:rgb(65, 131, 196)}
+
+.showmain-category-list dd p.letter{width: 30px;font: 22px bold;float: left}
+.showmain-category-list dd ul{float: left;width: 620px}
+.showmain-category-list dd ul li{margin:0px 10px 10px 10px;float: left}
+.showmain-category-list dd ul li p{text-align: center;line-height: 22px}
+.showmain-category-list dd ul li img{width: 100px;height: 100px;border-radius: 50px;border: 2px solid #ccc;padding: 1px}
+.showmain-category-list  dd{margin-bottom: 30px;border-bottom: 1px solid rgb(238, 238, 238);}
+
+.showmain-newest li{padding: 15px}
+.showmain-newest li img{float: left;width: 60px;height: 60px}
+.showmain-newest li p.info img.avatar{width: 20px;height: 20px;margin-right: 5px}
+.showmain-newest li p.info{float: left;margin-left: 10px;line-height: 22px}
+.showmain-newest li p.info span{color: rgb(128, 128, 128);}
+.showmain-newest li p.info a{font-weight: bold}
+
+.showmain-please-upload{margin-bottom: 20px}
+.showmain-please-upload p{line-height: 28px;color: rgb(128, 128, 128);}
+.showmain-please-upload a{width: 200px;text-align: center}
+
+/*showcatelist*/
+.showcatelist-list {width:100%;margin-top:10px}
+.showcatelist-list li{float: left;margin: 0px 10px 15px 0px;padding: 10px;border-radius: 3px;border: 1px solid rgb(238, 238, 238)}
+.showcatelist-list li img{width: 180px;height:180px}
+.showcatelist-list li .info{line-height: 22px;color:rgb(128, 128, 128);}
+.showcatelist-list li .info img.icon{width: 10px;height: 10px;}
+.showcatelist-list li .info span{margin: 0px 10px}
+.showcatelist-list li .author{margin-top: 5px}
+.showcatelist-list li .author img{float: left;width: 22px;height: 22px;margin-right: 10px}
+.showcatelist-list li .author a{float:left;line-height: 22px}
+
+.showcatelist .right-block h3{font-size:22px;color: rgb(85, 85, 85);}
+.showcatelist .right-block ul{margin-top: 15px;border-left: 1px solid rgb(238, 238, 238)}
+.showcatelist .right-block ul li{border-left:2px solid #fff;line-height: 25px;padding-left:20px}
+.showcatelist .right-block ul li.selected{border-left-color:rgb(210, 105, 17);}
+.showcatelist .right-block ul li a{color: rgb(65, 131, 196);}
+
+/*showinfo*/
+.showinfo .showinfo-list p{float: left;font-size:22px;margin-right: 15px;}
+.showinfo .showinfo-list ul{float: left}
+
+.showinfo .author-box{border: 1px solid rgb(238, 238, 238);padding: 5px;border-radius: 3px;}
+.showinfo .author-box .avatar{width: 150px;height: 150px}
+.showinfo .author-box h3{margin:5px 0px;font-size: 24px}
+.showinfo .author-box .mark{background: rgb(245, 245, 245);padding: 5px}
+.showinfo .author-box .mark div{overflow: hidden;padding: 5px 0px}
+.showinfo .author-box .mark div img.icon{width: 12px;height: 12px;margin-right: 10px;}
+.showinfo .author-box .mark div a,.showinfo .author-box div span,.showinfo .author-box div img.icon{float: left}
+.showinfo .author-box .mark div a{color: rgb(65, 131, 196);}
+.showinfo .author-box .mark div span{color:rgb(128, 128, 128);}
+
+.showinfo .like{margin-top:20px;}
+.showinfo .like p{color:rgb(128, 128, 128);line-height: 22px}
+
+.showinfo .comment{margin-top:20px;}
+.showinfo .comment textarea{resize: none;width: 100%;height: 50px;border: 1px solid #ccc;border-radius: 3px;padding: 5px; color:rgb(128, 128, 128); font-size: 12px}
+.showinfo .comment form p{color: rgb(128, 128, 128);float: right;display: inline-block;line-height: 32px}
+.showinfo .comment form button{float: left;padding: 3px 5px;margin-top: 3px;margin-right: 3px}
+.showinfo .comment ul{margin-top:20px}
+.showinfo .comment ul li{border-bottom: 1px solid rgb(238, 238, 238);padding: 15px 0px}
+.showinfo .comment ul li .avatar{float: left;width: 30px;height: 30px;}
+.showinfo .comment ul li .content{float: left;width: 240px}
+.showinfo .comment ul li .content{color: rgb(128, 128, 128);line-height: 22px;padding-left: 5px}
+.showinfo .comment ul li .content a{color:#000;font-weight: bold;margin-right:10px}
+.showinfo .comment ul li .reply{text-align: left;margin-top:5px;margin-left: 30px;padding:0px 5px;float: left;width: 240px;background: rgb(245, 245, 245);line-height: 22px}
