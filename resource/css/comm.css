@@ -190,7 +190,11 @@ a:hover{color: rgb(65, 131, 196);}
 
 /*通用feedlist*/
 .general-feedlist{}
-
+.general-feedlist li{line-height: 30px;padding: 5px 0px;border-bottom: 1px solid rgb(238,238,238)}
+.general-feedlist li .avatar{width: 30px;height: 30px;float: left;margin-right: 5px}
+.general-feedlist li b{float: left;margin-right: 5px}
+.general-feedlist li p{float: left;width: 530px;color: rgb(85,85,85);}
+.general-feedlist li p span{color: rgb(128, 128, 128);margin: 0px 5px}
 
 
 
@@ -333,12 +337,7 @@ a:hover{color: rgb(65, 131, 196);}
 /*societies-info*/
 .societies-info .societies-bulletin{padding: 10px ;line-height: 22px;color: rgb(85,85,85);background: rgb(245,245,245);margin-bottom: 30px}
 
-.societies-info .societies-feedlist{margin-bottom: 30px}
-.societies-info .societies-feedlist li{line-height: 30px;padding: 5px 0px;border-bottom: 1px solid rgb(238,238,238)}
-.societies-info .societies-feedlist li .avatar{width: 30px;height: 30px;float: left;margin-right: 5px}
-.societies-info .societies-feedlist li b{float: left;margin-right: 5px}
-.societies-info .societies-feedlist li p{float: left;width: 530px;color: rgb(85,85,85);}
-.societies-info .societies-feedlist li p span{color: rgb(128, 128, 128);margin: 0px 5px}
+.societies-info .general-feedlist{margin-bottom: 30px}
 
 .societies-info .societies-userlist li{float: left;width: 150px;line-height: 30px;padding: 0px 10px 10px 0px}
 .societies-info .societies-userlist li .avatar{float: left;width: 30px;height: 30px;margin-right: 5px}
