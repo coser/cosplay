@@ -11,7 +11,7 @@
 		<div class="clear"></div>
 	</div>
 </div>
-<div class="container">
+<div class="container showmain">
 	<div class="left-block">
 		<p class="showmain-category-tips"><a href="">分类少了请告诉我们</a></p>
 		<dl class="showmain-category-list">
@@ -83,7 +83,7 @@
 		</dl>
 	</div>
 	<div class="right-block">
-		<div class="showmain-please-upload">
+		<div class="please-action-box">
 			<p>上传你的作品分享它们</p>
 			<a class="actionbutton-green" href="">上传cos作品</a>
 		</div>

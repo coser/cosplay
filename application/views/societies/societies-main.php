@@ -109,7 +109,7 @@
 		</ul>
 	</div>
 	<div class="right-block">
-		<div class="societies-main-please-create">
+		<div class="please-action-box">
 			<p>创建属于你的社团，一起分享快乐吧</p>
 			<a class="actionbutton-green" href="">创建社团</a>
 		</div>

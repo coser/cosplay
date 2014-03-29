@@ -46,7 +46,7 @@
 				</table>
 			</div>
 		</div>
-		<div class="like">
+		<div class="please-action-box">
 			<p>如果你喜欢该作品点个赞</p>
 			<a href="" class="actionbutton-green">赞</a>
 		</div>

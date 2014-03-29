@@ -282,7 +282,11 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .general-baseinfo-box .box-bottom{padding:10px 0px;border-top: 1px solid rgb(238,238,238);}
 
 
-
+/*通用  右侧按钮box*/
+.please-action-box{}
+.please-action-box{margin-top:20px;border-top: 1px solid rgb(238, 238, 238);border-bottom:1px solid rgb(238, 238, 238);padding: 20px 0px}
+.please-action-box p{color:rgb(128, 128, 128);line-height: 22px  }
+.please-action-box p a{color: rgb(65, 131, 196);}
 
 /*首页*/
 .index-header{height: 81px;border-bottom: 1px solid #ccc}
@@ -345,15 +349,12 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 -moz-border-radius: 60px;-moz-box-sizing: content-box;}
 .showmain-category-list  dd{margin-bottom: 30px;border-bottom: 1px solid rgb(238, 238, 238);}
 
+.showmain .right-block .please-action-box{margin-bottom: 20px}
 .showmain-newest li{padding: 15px}
 .showmain-newest li img.cover{float: left;width: 60px;height: 60px;margin-right: 10px}
 .showmain-newest li .info span{margin: 0px 10px}
 .showmain-newest li .info a{font-weight: bold}
 .showmain-newest li .info p{line-height: 22px;color: rgb(128, 128, 128);}
-
-.showmain-please-upload{margin-bottom: 20px}
-.showmain-please-upload p{line-height: 28px;color: rgb(128, 128, 128);}
-.showmain-please-upload a{width: 200px;text-align: center}
 
 
 .showcatelist .right-block ul{border-left: 1px solid rgb(238, 238, 238);}
@@ -369,8 +370,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .showinfo .timeline ul li a{width: 150px;font-size:14px;color:rgb(128, 128, 128);display: block;padding: 10px;border-right: 2px solid rgb(255, 255, 255);}
 .showinfo .timeline ul li a.selected,.showinfo .timeline ul li a:hover{color:rgb(0,0,0);font-size:22px;border-right-color:rgb(210, 105, 17)}
 
-.showinfo .like{margin-top:20px;border-top: 1px solid rgb(238, 238, 238);border-bottom:1px solid rgb(238, 238, 238);padding: 20px 0px}
-.showinfo .like p{color:rgb(128, 128, 128);line-height: 22px  }
+
 
 .showinfo .comment{margin-top:20px;}
 .showinfo .comment textarea{resize: none;width: 100%;height: 50px;border: 1px solid #ccc;border-radius: 3px;padding: 5px; color:rgb(128, 128, 128); font-size: 12px}
@@ -394,10 +394,6 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .societies-list li .description{color: rgb(128, 128, 128);line-height: 22px;height: 50px;width: 450px}
 .societies-list li .base-info table td{vertical-align: center;padding: 0px 10px 0px 0px;color: rgb(128, 128, 128);}
 .societies-list li .base-info table td.title{color: rgb(0, 0, 0);}
-
-.societies-main-please-create{margin-bottom: 20px}
-.societies-main-please-create p{line-height: 28px;color: rgb(128, 128, 128);}
-.societies-main-please-create a{width: 200px;text-align: center}
 
 /*societies-info*/
 .societies-info .societies-bulletin{padding: 10px ;line-height: 22px;color: rgb(85,85,85);background: rgb(245,245,245);margin-bottom: 30px}
@@ -444,3 +440,9 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .societies-setting .menu li a{padding-left: 10px; background:  rgb(250, 250, 251); font-size: 12px;display:block;border-left: 2px solid rgb(250, 250, 251);color: rgb(65, 131, 196);line-height: 36px;}
 .societies-setting .menu li a.selected{border-left-color:rgb(210, 105, 17); color: rgb(0,0,0);background:  #fff;}
 .societies-setting .menu li a:hover{background: rgb(253, 253, 254)}
+
+/*societies-members*/
+.societies-members .societies-members-list ul{overflow: hidden;padding: 0px 0px 20px 0px;width: 100%;margin-bottom:20px;border-bottom: 1px solid rgb(238,238,238)}
+.societies-members .societies-members-list ul li{float: left;padding: 5px 0px;margin-right: 30px}
+.societies-members .societies-members-list ul li .img_text{line-height: 40px;font-size: 18px;color: rgb(65, 131, 196);}
+.societies-members .societies-members-list ul li .img_text img{width: 40px;height: 40px}

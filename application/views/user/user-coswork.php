@@ -79,9 +79,13 @@
 			<div class="input">全部分类</div><a class="actionbutton-gray">选择</a>
 			<div class="input">全部扮演角色</div><a class="actionbutton-gray">选择</a>
 		</div>
-		<div class="showmain-please-upload">
+		<div class="please-action-box">
 			<p>上传你的作品分享它们</p>
 			<a class="actionbutton-green" href="">上传cos作品</a>
+		</div>
+		<div class="please-action-box">
+			<p>编辑删除管理你的作品</p>
+			<a href="" class="actionbutton-gray">作品管理</a>
 		</div>
 	</div>
 	<div class="clear"></div>
