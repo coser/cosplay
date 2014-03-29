@@ -43,15 +43,22 @@
 		</dl>
 	</div>
 	<div class="right-block">
-		<div class="author-box">
-			<img class="avatar" src="/resource/images/test.jpg">
-			<h3>redback1020</h3>
-			<div>
-				<img class="icon" src="/resource/images/heart.png"><span>4444</span>
-				<img class="icon" src="/resource/images/eye.png"><span>12444</span>
+		<div class="general-baseinfo-box">
+			<div class="box-header">
+				<img src="/resource/images/test.jpg">
+				<h3>redback</h3>
 			</div>
-			<div class="societies">
-				<img class="societies-cover" src="/resource/images/test.jpg"><a href="">cos社团</a>
+			<div class="box-body">
+				<div class="data-with-icon">
+					<img class="icon" src="/resource/images/heart.png"><span>4444</span>
+					<img class="icon" src="/resource/images/eye.png"><span>12444</span>
+				</div>
+				<table>
+					<tr>
+						<td class="title">所属</td>
+						<td>个人作品</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 		<div class="like">
@@ -99,4 +106,4 @@
 	</div>
 	<div class="clear"></div>
 </div>
-	
+<?php $this->load->view('/public/general-foot'); ?>	

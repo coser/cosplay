@@ -70,5 +70,4 @@
 			</table>
 		</div>
 	</div>
-</body>
-</html>
+<?php $this->load->view('/public/general-foot'); ?>	

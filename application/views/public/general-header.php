@@ -10,8 +10,8 @@
 	<div class="general-header">
 		<div class="container">
 			<a class="logo" href="/main"><img src="/resource/images/logo.png"</a>
-			<a class="actionbutton-gray" href="/user">
-				<img class="avatar" src="/resource/images/test.jpg"><span>redback1020</span>
+			<a class="actionbutton-gray img_text" href="/user">
+				<img class="avatar" src="/resource/images/test.jpg">redback1020
 			</a>
 			<a class="actionbutton-green">登陆</a>
 			<ul class="menu">

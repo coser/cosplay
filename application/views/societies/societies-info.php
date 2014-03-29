@@ -62,154 +62,97 @@
 		<div class="societies-show-newest">
 			<ul>
 				<li>
-					<a href="/show/info"><img src="/resource/images/test.jpg" /></a>
-					
-					<div class="author">
-						<img class="avatar" src="/resource/images/test.jpg">
-						<a href="/">redback1020</a>
-						<div class="clear"></div>
-					</div>
+					<a href="/show/info"><img class="cover" src="/resource/images/test.jpg" /></a>
 				</li>
 				<li>
-					<a href="/show/info"><img src="/resource/images/test.jpg" /></a>
-					
-					<div class="author">
-						<img class="avatar" src="/resource/images/test.jpg">
-						<a href="/">redback1020</a>
-						<div class="clear"></div>
-					</div>
+					<a href="/show/info"><img class="cover" src="/resource/images/test.jpg" /></a>
 				</li>
 				<li>
-					<a href="/show/info"><img src="/resource/images/test.jpg" /></a>
-					
-					<div class="author">
-						<img class="avatar" src="/resource/images/test.jpg">
-						<a href="/">redback1020</a>
-						<div class="clear"></div>
-					</div>
+					<a href="/show/info"><img class="cover" src="/resource/images/test.jpg" /></a>
 				</li>
 				<li>
-					<a href="/show/info"><img src="/resource/images/test.jpg" /></a>
-					
-					<div class="author">
-						<img class="avatar" src="/resource/images/test.jpg">
-						<a href="/">redback1020</a>
-						<div class="clear"></div>
-					</div>
+					<a href="/show/info"><img class="cover" src="/resource/images/test.jpg" /></a>
 				</li>
 				<li>
-					<a href="/show/info"><img src="/resource/images/test.jpg" /></a>
-					
-					<div class="author">
-						<img class="avatar" src="/resource/images/test.jpg">
-						<a href="/">redback1020</a>
-						<div class="clear"></div>
-					</div>
+					<a href="/show/info"><img class="cover" src="/resource/images/test.jpg" /></a>
 				</li>
 				<li>
-					<a href="/show/info"><img src="/resource/images/test.jpg" /></a>
-					
-					<div class="author">
-						<img class="avatar" src="/resource/images/test.jpg">
-						<a href="/">redback1020</a>
-						<div class="clear"></div>
-					</div>
+					<a href="/show/info"><img class="cover" src="/resource/images/test.jpg" /></a>
 				</li>
 				<div class="clear"></div>
 			</ul>
 		</div>
 		<div class="general-title">
 			<h3>最新加入</h3>
-			<a href="" class="actionbutton-gray">管理</a>
 		</div>
 		<div class="societies-userlist">
 			<ul>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					 <a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<li>
-					<img class="avatar" src="/resource/images/test.jpg">
-					<a href="">redback1020</a>
-					<div class="clear"></div>
+					<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
 				</li>
 				<div class="clear"></div>
 			</ul>
 		</div>
 	</div>
 	<div class="right-block">
-		<div class="societies-info-box">
-			<img class="cover" src="/resource/images/test.jpg">
-			<h3>cos社团</h3>
-			<table>
-				<tr>
-					<td class="title">成员数</td>
-					<td>444</td>
-				</tr>
-				<tr>
-					<td class="title">作品数</td>
-					<td>4564</td>
-				</tr>
-				<tr>
-					<td class="title">团长</td>
-					<td>
-						 <img class="avatar" src="/resource/images/test.jpg">
-						 <a href="">redback1020</a>
-					</td>
-				</tr>
-			</table>
+		<div class="general-baseinfo-box">
+			<div class="box-header">
+				<img src="/resource/images/test.jpg">
+				<h3>cos社团</h3>
+			</div>
+			<div class="box-body">
+				<table>
+					<tr>
+						<td class="title">成员数</td>
+						<td>444</td>
+					</tr>
+					<tr>
+						<td class="title">作品数</td>
+						<td>4564</td>
+					</tr>
+					<tr>
+						<td class="title">团长</td>
+						<td>
+							<a class="img_text" href=""><img class="avatar" src="/resource/images/test.jpg">redback1020</a>
+						</td>
+					</tr>
+				</table>
+			</div>
 		</div>
 	</div>
 	<div class="clear"></div>
 </div>
+<?php $this->load->view('/public/general-foot'); ?>	

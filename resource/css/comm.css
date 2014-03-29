@@ -8,16 +8,24 @@ li { list-style: none outside none;}
 a{text-decoration: none;color:#000}
 a:hover{color: rgb(65, 131, 196);}
 
+
 * {
     -moz-box-sizing: border-box;
 }
 .clear{clear: both;height: 0px;}
 .container{width: 980px;margin: 0px auto}
+.hr{border-bottom: 1px solid rgb(238,238,238)}
+h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
+
+.input{line-height: 30px;display: inline-block;margin-right: 10px;padding:0px 5px;border: 1px solid #ccc;border-radius: 2px;width: 200px}
 
 /*通用布局*/
 .right-block{float: right;width: 280px}
 .left-block{float: left;width: 650px}
 
+/*通用 头像＋用户名或者 社团图片＋社团名*/
+.img_text{display: inline-block;overflow: hidden;line-height: 20px;}
+.img_text img{float: left;margin-right: 8px;width: 20px;height: 20px}
 
 /*通用按钮*/
 .actionbutton-gray{
@@ -76,6 +84,7 @@ a:hover{color: rgb(65, 131, 196);}
 }
 
 
+.button-group{margin-bottom: 10px}
 .button-group a{
     float:left;
     text-decoration: none;
@@ -131,12 +140,19 @@ a:hover{color: rgb(65, 131, 196);}
 .general-header ul li a{font:14px bold;}
 .general-header a.actionbutton-green,.general-header a.actionbutton-gray{float: right;margin:8px 5px 0px 0px;padding:4px 6px;line-height: 18px;}
 
+/*通用foot*/
+.general-foot{margin-top: 50px;border-top:1px solid rgb(238, 238, 238)}
+.general-foot ul li{line-height: 100px;float: left;margin-right: 30px;color: rgb(119, 119, 119)}
+.general-foot .links a{color: rgb(65, 131, 196);}
+
+
 /*通用title*/
 .general-title{margin-bottom: 5px;overflow: hidden;height: 30px}
 .general-title h3{font-size: 18px;color: rgb(0, 0, 0);float: left;line-height: 30px;margin-right: 5px}
 .general-title h3 span{color: rgb(128, 128, 128);margin: 0px 5px;font-size: 14px}
 .general-title a.actionbutton-gray{float: left;padding: 4px 6px;line-height: 14px}
 
+/*通用pageheader*/
 .general-pageheader{height: 81px;border-bottom: 1px solid rgb(238, 238, 238);margin-bottom: 20px}
 .general-pageheader h1{font: 22px;line-height:80px;display: inline-block;float: left}
 .general-pageheader h1.title span{font-size: 20px;color: rgb(128, 128, 128);margin: 0px 5px}
@@ -170,6 +186,7 @@ a:hover{color: rgb(65, 131, 196);}
     color: rgb(85, 85, 85);
 }
 .box .box-header h3 span{color: rgb(128, 128, 128);margin: 0px 5px;font-size: 12px}
+
 .box .box-body{
     background-color: rgb(255, 255, 255);
     border-style: solid;
@@ -188,6 +205,25 @@ a:hover{color: rgb(65, 131, 196);}
 .box .box-body .box-ul-list li{border-bottom: 1px solid rgb(213, 213, 213); }
 .box .box-body .box-ul-list li:last-child{border: none}
 
+
+/*通用border-box*/
+.border-box{padding: 3px; background:  rgb(239, 239, 239); border-radius: 2px;}
+.border-box .box-container{border-radius: 2px;border: 1px solid rgb(216, 216, 216);}
+.border-box .box-container .box-header{
+    background-color: rgb(224, 224, 224);
+    background-image: linear-gradient(rgb(250, 250, 250), rgb(224, 224, 224));
+    background-repeat: repeat-x;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5) inset;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    color: rgb(85, 85, 85);
+    font-size: 16px;
+    font-weight: bold
+}
+.border-box .box-container .box-body{background: #fff}
+
+
 /*通用feedlist*/
 .general-feedlist{}
 .general-feedlist li{line-height: 30px;padding: 5px 0px;border-bottom: 1px solid rgb(238,238,238)}
@@ -195,6 +231,37 @@ a:hover{color: rgb(65, 131, 196);}
 .general-feedlist li b{float: left;margin-right: 5px}
 .general-feedlist li p{float: left;width: 530px;color: rgb(85,85,85);}
 .general-feedlist li p span{color: rgb(128, 128, 128);margin: 0px 5px}
+
+
+
+/*通用general-show-list*/
+.general-show-list{}
+.general-show-list {width:100%;}
+.general-show-list li{float: left;margin: 0px 10px 15px 0px;padding: 10px;border-radius: 3px;border: 1px solid rgb(238, 238, 238)}
+.general-show-list li img.cover{width: 180px;height:180px}
+.general-show-list li .info{line-height: 22px;color:rgb(128, 128, 128);margin:2px 0px}
+.general-show-list li .info img.icon{width: 10px;height: 10px;}
+.general-show-list li .info span{margin: 0px 10px}
+
+
+
+/*通用左侧基础信息 baseinfo*/
+.general-baseinfo-box{}
+.general-baseinfo-box .box-header img{width: 150px;height: 150px}
+.general-baseinfo-box .box-header h3{margin:5px 0px;font-size: 24px}
+
+.general-baseinfo-box .box-body{padding:10px 0px;}
+.general-baseinfo-box .box-body .data-with-icon{overflow: hidden}
+.general-baseinfo-box .box-body .data-with-icon img{width: 12px;height: 12px;float: left}
+.general-baseinfo-box .box-body .data-with-icon span{float: left;color:rgb(128, 128, 128);margin:0px 10px}
+.general-baseinfo-box .box-body table{width: 100%;}
+.general-baseinfo-box .box-body table tr td{font-size:14px;line-height: 20px;color: rgb(128, 128, 128);padding: 5px 0px}
+.general-baseinfo-box .box-body table tr td.title{width: 50px;color: rgb(0,0,0)}
+.general-baseinfo-box .box-body table tr td .avatar{width: 20px;height: 20px;float: left;margin-right: 5px}
+.general-baseinfo-box .box-body table tr td a{line-height: 20px;float: left}
+
+.general-baseinfo-box .box-bottom{padding:10px 0px;border-top: 1px solid rgb(238,238,238);}
+
 
 
 
@@ -244,8 +311,6 @@ a:hover{color: rgb(65, 131, 196);}
 
 
 
-
-
 /*showmain*/
 
 .showmain-category-tips{text-align: right;font-size: 12px;line-height: 30px}
@@ -253,53 +318,32 @@ a:hover{color: rgb(65, 131, 196);}
 
 .showmain-category-list dd p.letter{width: 30px;font: 22px bold;float: left}
 .showmain-category-list dd ul{float: left;width: 620px}
-.showmain-category-list dd ul li{margin:0px 10px 10px 10px;float: left}
+.showmain-category-list dd ul li{margin:0px 20px 10px 20px;float: left}
 .showmain-category-list dd ul li p{text-align: center;line-height: 22px}
-.showmain-category-list dd ul li img{width: 100px;height: 100px;border-radius: 50px;border: 2px solid #ccc;padding: 1px}
+.showmain-category-list dd ul li .cover{display: inline-block;border: 2px solid #ccc;padding:1px}
+.showmain-category-list dd ul li .cover,.showmain-category-list dd ul li .cover img{
+    width: 100px;height: 100px;-webkit-border-radius: 60px;border-radius: 60px;
+-moz-border-radius: 60px;-moz-box-sizing: content-box;}
 .showmain-category-list  dd{margin-bottom: 30px;border-bottom: 1px solid rgb(238, 238, 238);}
 
 .showmain-newest li{padding: 15px}
-.showmain-newest li img{float: left;width: 60px;height: 60px}
-.showmain-newest li p.info img.avatar{width: 20px;height: 20px;margin-right: 5px}
-.showmain-newest li p.info{float: left;margin-left: 10px;line-height: 22px}
-.showmain-newest li p.info span{color: rgb(128, 128, 128);}
-.showmain-newest li p.info a{font-weight: bold}
+.showmain-newest li img.cover{float: left;width: 60px;height: 60px;margin-right: 10px}
+.showmain-newest li .info span{margin: 0px 10px}
+.showmain-newest li .info a{font-weight: bold}
+.showmain-newest li .info p{line-height: 22px;color: rgb(128, 128, 128);}
 
 .showmain-please-upload{margin-bottom: 20px}
 .showmain-please-upload p{line-height: 28px;color: rgb(128, 128, 128);}
 .showmain-please-upload a{width: 200px;text-align: center}
 
-/*showcatelist*/
-.showcatelist-list {width:100%;margin-top:10px}
-.showcatelist-list li{float: left;margin: 0px 10px 15px 0px;padding: 10px;border-radius: 3px;border: 1px solid rgb(238, 238, 238)}
-.showcatelist-list li img{width: 180px;height:180px}
-.showcatelist-list li .info{line-height: 22px;color:rgb(128, 128, 128);}
-.showcatelist-list li .info img.icon{width: 10px;height: 10px;}
-.showcatelist-list li .info span{margin: 0px 10px}
-.showcatelist-list li .author{margin-top: 5px}
-.showcatelist-list li .author img{float: left;width: 22px;height: 22px;margin-right: 10px}
-.showcatelist-list li .author a{float:left;line-height: 22px}
 
-.showcatelist .right-block h3{font-size:22px;color: rgb(85, 85, 85);}
-.showcatelist .right-block ul{margin-top: 15px;border-left: 1px solid rgb(238, 238, 238)}
-.showcatelist .right-block ul li{border-left:2px solid #fff;line-height: 25px;padding-left:20px}
-.showcatelist .right-block ul li.selected{border-left-color:rgb(210, 105, 17);}
-.showcatelist .right-block ul li a{color: rgb(65, 131, 196);}
+.showcatelist .right-block ul{border-left: 1px solid rgb(238, 238, 238);}
+.showcatelist .right-block ul li a.selected{border-left-color:rgb(210, 105, 17);color:#000}
+.showcatelist .right-block ul li a{ display: block;border-left:2px solid #fff;line-height: 25px;padding-left:20px;color: rgb(65, 131, 196);}
 
 /*showinfo*/
 .showinfo .showinfo-list p{float: left;font-size:22px;margin-right: 15px;}
 .showinfo .showinfo-list ul{float: left}
-
-.showinfo .author-box{border: 1px solid rgb(238, 238, 238);padding: 10px;border-radius: 3px;}
-.showinfo .author-box .avatar{width: 150px;height: 150px}
-.showinfo .author-box h3{margin:5px 0px;font-size: 24px}
-.showinfo .author-box div{overflow: hidden;padding: 5px 0px}
-.showinfo .author-box div img.icon{width: 12px;height: 12px;}
-.showinfo .author-box div a,.showinfo .author-box div span,.showinfo .author-box div img.icon{float: left}
-.showinfo .author-box div span{color:rgb(128, 128, 128);margin:0px 10px}
-.showinfo .author-box div.societies{border-top: 1px solid rgb(238, 238, 238);padding-top: 15px;margin-top: 10px}
-.showinfo .author-box div.societies img.societies-cover{float: left;width: 30px;height: 30px;margin-right: 10px}
-.showinfo .author-box div.societies a{font-size: 16px;float: left;line-height: 30px}
 
 .showinfo .like{margin-top:20px;border-top: 1px solid rgb(238, 238, 238);border-bottom:1px solid rgb(238, 238, 238);padding: 20px 0px}
 .showinfo .like p{color:rgb(128, 128, 128);line-height: 22px  }
@@ -324,11 +368,8 @@ a:hover{color: rgb(65, 131, 196);}
 .societies-list li .info{float: left;}
 .societies-list li .info h3{font-size: 18px;line-height: 24px}
 .societies-list li .description{color: rgb(128, 128, 128);line-height: 22px;height: 50px;width: 450px}
-.societies-list li .base-info table td{vertical-align: center;line-height: 22px;padding: 0px 10px 0px 0px;color: rgb(128, 128, 128);}
+.societies-list li .base-info table td{vertical-align: center;padding: 0px 10px 0px 0px;color: rgb(128, 128, 128);}
 .societies-list li .base-info table td.title{color: rgb(0, 0, 0);}
-.societies-list li .base-info table td img{width: 20px;height: 20px;float: left;margin-right: 5px}
-.societies-list li .base-info table td a{float: left;color: rgb(65, 131, 196);}
-
 
 .societies-main-please-create{margin-bottom: 20px}
 .societies-main-please-create p{line-height: 28px;color: rgb(128, 128, 128);}
@@ -338,26 +379,44 @@ a:hover{color: rgb(65, 131, 196);}
 .societies-info .societies-bulletin{padding: 10px ;line-height: 22px;color: rgb(85,85,85);background: rgb(245,245,245);margin-bottom: 30px}
 
 .societies-info .general-feedlist{margin-bottom: 30px}
-
-.societies-info .societies-userlist li{float: left;width: 150px;line-height: 30px;padding: 0px 10px 10px 0px}
-.societies-info .societies-userlist li .avatar{float: left;width: 30px;height: 30px;margin-right: 5px}
-.societies-info .societies-userlist li a{float: left;}
+.societies-info .societies-userlist li{float: left;width: 150px;padding: 0px 10px 10px 0px}
 
 .societies-info .societies-show-newest{margin-bottom: 30px}
 .societies-info .societies-show-newest li{float: left;margin: 0px 10px 15px 0px;padding: 10px;border-radius: 3px;border: 1px solid rgb(238, 238, 238)}
-.societies-info .societies-show-newest li img{width: 180px;height:180px}
-.societies-info .societies-show-newest li .info{line-height: 22px;color:rgb(128, 128, 128);}
-.societies-info .societies-show-newest .info img.icon{width: 10px;height: 10px;}
-.societies-info .societies-show-newest .info span{margin: 0px 10px}
-.societies-info .societies-show-newest .author{margin-top: 5px}
-.societies-info .societies-show-newest .author img{float: left;width: 22px;height: 22px;margin-right: 10px}
-.societies-info .societies-show-newest .author a{float:left;line-height: 22px}
+.societies-info .societies-show-newest li img.cover{width: 180px;height:180px}
 
-.societies-info .societies-info-box{}
-.societies-info .societies-info-box .cover{width: 150px;height: 150px}
-.societies-info .societies-info-box h3{margin:5px 0px;font-size: 24px}
-.societies-info .societies-info-box table{width: 100%;border-top: 1px solid rgb(238,238,238);margin-top: 20px}
-.societies-info .societies-info-box table tr td{font-size:14px;line-height: 20px;color: rgb(128, 128, 128);padding: 5px 0px}
-.societies-info .societies-info-box table tr td.title{width: 50px;color: rgb(0,0,0)}
-.societies-info .societies-info-box table tr td .avatar{width: 20px;height: 20px;float: left;margin-right: 5px}
-.societies-info .societies-info-box table tr td a{line-height: 20px;float: left}
+/*usermain*/
+.usermain .general-feedlist{margin-bottom: 30px}
+.usermain .usermain-societies-list{}
+.usermain .usermain-societies-list ul li{float: left;width: 200px;margin: 10px 10px 0px 0px;overflow: hidden}
+.usermain .usermain-societies-list ul li img{float: left;width: 60px;height: 60px;margin-right: 5px}
+.usermain .usermain-societies-list ul li div{float: left;}
+.usermain .usermain-societies-list ul li div h3{font-size: 16px}
+.usermain .usermain-societies-list ul li div em{line-height: 22px;color: rgb(128, 128, 128)}
+.usermain .usermain-societies-list ul li div p{line-height: 22px;}
+.usermain .usermain-societies-list ul li div p span{color: rgb(128, 128, 128);margin: 0px 5px}
+.usermain .usermain-societies-list .hr{margin: 10px 0px}
+
+
+/*usersetting*/
+.usersetting .left-block{width: 250px}
+.usersetting .right-block{width: 700px}
+
+.usersetting .menu li{border-bottom: 1px solid rgb(238,238,238)}
+.usersetting .menu li a{padding-left: 10px; background:  rgb(250, 250, 251); font-size: 12px;display:block;border-left: 2px solid rgb(250, 250, 251);color: rgb(65, 131, 196);line-height: 36px;}
+.usersetting .menu li a.selected{border-left-color:rgb(210, 105, 17); color: rgb(0,0,0);background:  #fff;}
+.usersetting .menu li a:hover{background: rgb(253, 253, 254)}
+
+.usersetting .setting-form{padding: 10px 7px}
+.usersetting .setting-form dl dt{color: rgb(102, 102, 102);margin-bottom: 10px}
+.usersetting .setting-form dl dt label{font-size: 14px}
+.usersetting .setting-form dl dd{margin-bottom: 20px}
+
+.usersetting .setting-form .upload-avatar{overflow: hidden}
+.usersetting .setting-form .upload-avatar img{width: 100px;height: 100px;float: left;margin-right: 10px}
+.usersetting .setting-form .upload-avatar p{color: rgb(153, 153, 153);margin-top: 10px}
+
+/*usercosword*/
+.usercoswork-filter{margin-bottom: 20px}
+.usercoswork-filter .input,.usercoswork-filter .actionbutton-gray{margin-bottom: 5px}
+

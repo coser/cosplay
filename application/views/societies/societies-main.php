@@ -33,7 +33,7 @@
 								<td class="title"><b>创团时间</b></td>
 								<td>2014-04－05</td>
 								<td class="title"><b>团长</b></td>
-								<td><img src="/resource/images/test.jpg"><a href="">redback1020</a></td>
+								<td><a class="img_text" href=""><img src="/resource/images/test.jpg">redback1020</a></td>
 							</tr>
 						</table>
 					</div>
@@ -55,7 +55,7 @@
 								<td class="title"><b>创团时间</b></td>
 								<td>2014-04－05</td>
 								<td class="title"><b>团长</b></td>
-								<td><img src="/resource/images/test.jpg"><a href="">redback1020</a></td>
+								<td><a class="img_text" href=""><img src="/resource/images/test.jpg">redback1020</a></td>
 							</tr>
 						</table>
 					</div>
@@ -77,7 +77,7 @@
 								<td class="title"><b>创团时间</b></td>
 								<td>2014-04－05</td>
 								<td class="title"><b>团长</b></td>
-								<td><img src="/resource/images/test.jpg"><a href="">redback1020</a></td>
+								<td><a class="img_text" href=""><img src="/resource/images/test.jpg">redback1020</a></td>
 							</tr>
 						</table>
 					</div>
@@ -99,7 +99,7 @@
 								<td class="title"><b>创团时间</b></td>
 								<td>2014-04－05</td>
 								<td class="title"><b>团长</b></td>
-								<td><img src="/resource/images/test.jpg"><a href="">redback1020</a></td>
+								<td><a class="img_text" href=""><img src="/resource/images/test.jpg">redback1020</a></td>
 							</tr>
 						</table>
 					</div>
@@ -116,3 +116,4 @@
 	</div>
 	<div class="clear"></div>
 </div>
+<?php $this->load->view('/public/general-foot'); ?>	

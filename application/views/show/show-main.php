@@ -19,31 +19,31 @@
 				<p class="letter">A</p>
 				<ul>
 					<li>
-						<a href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>		
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>		
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>		
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>		
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>		
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>		
 					</li>
 					<div class="clear"></div>
@@ -54,12 +54,12 @@
 				<p class="letter">B</p>
 				<ul>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>		
+						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
+						<p class="cname"><a href="">海贼王</a></p>
 					</li>
 					<div class="clear"></div>
 				</ul>
@@ -69,12 +69,12 @@
 				<p class="letter">C</p>
 				<ul>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
+						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
 						<p class="cname"><a href="">海贼王</a></p>
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>		
+						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
+						<p class="cname"><a href="">海贼王</a></p>
 					</li>
 					<div class="clear"></div>
 				</ul>
@@ -94,23 +94,21 @@
 			<div class="box-body">
 				<ul class="box-ul-list showmain-newest">
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="info">
-							<a href=""><img class="avatar"  src="/resource/images/test.jpg" />redback1020</a>
-							<br/>
-							<br/>
-							<span>1小时前上传</span>
-						</p>
+						<a href=""><img class="cover" src="/resource/images/test.jpg" /></a>
+						<div class="info">
+							<a class="img_text" href=""><img class="avatar"  src="/resource/images/test.jpg" />redback1020</a>
+							<p>动漫<span>/</span>海贼王</p>
+							<p>1小时前上传</p>
+						</div>
 						<div class="clear"></div>
 					</li>
 					<li>
-						<a href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="info">
-							<a href="/"><img class="avatar"  src="/resource/images/test.jpg" />redback1020</a>
-							<br/>
-							<br/>
-							<span>1小时前上传</span>
-						</p>
+						<a href=""><img class="cover" src="/resource/images/test.jpg" /></a>
+						<div class="info">
+							<a class="img_text" href="/"><img class="avatar"  src="/resource/images/test.jpg" />redback1020</a>
+							<p>动漫<span>/</span>海贼王</p>
+							<p>1小时前上传</p>
+						</fiv>
 						<div class="clear"></div>
 					</li>
 				</ul>
@@ -119,3 +117,4 @@
 	</div>
 	<div class="clear"></div>
 </div>
+<?php $this->load->view('/public/general-foot'); ?>	
