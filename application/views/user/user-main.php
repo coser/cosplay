@@ -4,7 +4,6 @@
 		<h1 class="title">redback1020<span>User Center</span></h1>
 		<ul>
 			<li><a href="/user/coswork">个人作品</a></li>
-			<li><a href="/user/setting">设置</a></li>
 		</ul>
 		<div class="clear"></div>
 	</div>

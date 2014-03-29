@@ -17,11 +17,12 @@ a:hover{color: rgb(65, 131, 196);}
 .hr{border-bottom: 1px solid rgb(238,238,238)}
 h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 
-.input{line-height: 30px;display: inline-block;margin-right: 10px;padding:0px 5px;border: 1px solid #ccc;border-radius: 2px;width: 200px}
+.input{height: 30px;line-height: 30px;color: rgb(153, 153, 153);display: inline-block;margin-right: 10px;padding:0px 5px;border: 1px solid #ccc;border-radius: 2px;width: 200px}
 
 /*通用布局*/
 .right-block{float: right;width: 280px}
 .left-block{float: left;width: 650px}
+.middle-block{margin: 0px auto;width: 600px}
 
 /*通用 头像＋用户名或者 社团图片＋社团名*/
 .img_text{display: inline-block;overflow: hidden;line-height: 20px;}
@@ -128,6 +129,20 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15) inset;   
 }
 
+
+/*通用表达form_table*/
+.form_table{}
+.form_table{padding: 20px 10px}
+.form_table dl dt{color: rgb(102, 102, 102);margin-bottom: 10px}
+.form_table dl dt label{font-size: 14px}
+.form_table dl dd{margin-bottom: 20px}
+
+.form_table .upload-avatar{overflow: hidden}
+.form_table .upload-avatar img{width: 100px;height: 100px;float: left;margin-right: 10px}
+.form_table .upload-avatar p{margin-top: 10px}
+.form_table .tip{color: rgb(153, 153, 153);line-height: 22px}
+.form_table .tip a{color: rgb(65, 131, 196);}
+
 /*通用header*/
 .general-header{
     border-bottom: 1px solid #ccc;height: 45px;
@@ -135,10 +150,14 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
     background-image: linear-gradient(rgb(249, 249, 249), rgb(243, 243, 243));
     background-repeat: repeat-x;}
 .general-header a.logo img{ width: 35px;height: 30px;float: left;margin-top: 6px }
-.general-header ul{float: right;margin-right:50px;}
-.general-header ul li{float: left;padding:0px 15px;line-height: 44px}
-.general-header ul li a{font:14px bold;}
+.general-header ul.menu{float: right;margin-right:50px;}
+.general-header ul.menu li{float: left;padding:0px 15px;line-height: 44px}
+.general-header ul.menu li a{font:14px bold;}
 .general-header a.actionbutton-green,.general-header a.actionbutton-gray{float: right;margin:8px 5px 0px 0px;padding:4px 6px;line-height: 18px;}
+.general-header ul.actions{float: right;}
+.general-header ul.actions li{float: left;padding: 0px 5px;line-height: 44px}
+.general-header ul.actions li a{font-size: 12px;color: rgb(128, 128, 128)}
+.general-header ul.actions li a:hover{color: rgb(65, 131, 196);}
 
 /*通用foot*/
 .general-foot{margin-top: 50px;border-top:1px solid rgb(238, 238, 238)}
@@ -342,8 +361,13 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .showcatelist .right-block ul li a{ display: block;border-left:2px solid #fff;line-height: 25px;padding-left:20px;color: rgb(65, 131, 196);}
 
 /*showinfo*/
-.showinfo .showinfo-list p{float: left;font-size:22px;margin-right: 15px;}
-.showinfo .showinfo-list ul{float: left}
+.showinfo .left-block{position: relative}
+.showinfo .showinfo-list p{font-size:12px;line-height: 22px;text-align: right;color: rgb(128, 128, 128);}
+
+.showinfo .timeline{position: absolute;top: 0px;left: -170px;}
+.showinfo .timeline ul{border-right: 2px solid rgb(238, 238, 238);padding-bottom:30px}
+.showinfo .timeline ul li a{width: 150px;font-size:14px;color:rgb(128, 128, 128);display: block;padding: 10px;border-right: 2px solid rgb(255, 255, 255);}
+.showinfo .timeline ul li a.selected,.showinfo .timeline ul li a:hover{color:rgb(0,0,0);font-size:22px;border-right-color:rgb(210, 105, 17)}
 
 .showinfo .like{margin-top:20px;border-top: 1px solid rgb(238, 238, 238);border-bottom:1px solid rgb(238, 238, 238);padding: 20px 0px}
 .showinfo .like p{color:rgb(128, 128, 128);line-height: 22px  }
@@ -407,16 +431,16 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .usersetting .menu li a.selected{border-left-color:rgb(210, 105, 17); color: rgb(0,0,0);background:  #fff;}
 .usersetting .menu li a:hover{background: rgb(253, 253, 254)}
 
-.usersetting .setting-form{padding: 10px 7px}
-.usersetting .setting-form dl dt{color: rgb(102, 102, 102);margin-bottom: 10px}
-.usersetting .setting-form dl dt label{font-size: 14px}
-.usersetting .setting-form dl dd{margin-bottom: 20px}
 
-.usersetting .setting-form .upload-avatar{overflow: hidden}
-.usersetting .setting-form .upload-avatar img{width: 100px;height: 100px;float: left;margin-right: 10px}
-.usersetting .setting-form .upload-avatar p{color: rgb(153, 153, 153);margin-top: 10px}
 
 /*usercosword*/
 .usercoswork-filter{margin-bottom: 20px}
 .usercoswork-filter .input,.usercoswork-filter .actionbutton-gray{margin-bottom: 5px}
 
+/*societies-setting*/
+.societies-setting .left-block{width: 250px}
+.societies-setting .right-block{width: 700px}
+.societies-setting .menu li{border-bottom: 1px solid rgb(238,238,238)}
+.societies-setting .menu li a{padding-left: 10px; background:  rgb(250, 250, 251); font-size: 12px;display:block;border-left: 2px solid rgb(250, 250, 251);color: rgb(65, 131, 196);line-height: 36px;}
+.societies-setting .menu li a.selected{border-left-color:rgb(210, 105, 17); color: rgb(0,0,0);background:  #fff;}
+.societies-setting .menu li a:hover{background: rgb(253, 253, 254)}

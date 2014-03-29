@@ -23,11 +23,6 @@ class User extends CI_Controller {
 		$this->load->view('user/user-main');
 	}
 	
-	public function setting(){
-		
-		
-		$this->load->view('user/user-setting');
-	}
 	
 	public function coswork(){
 		

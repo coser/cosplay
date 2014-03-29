@@ -7,29 +7,13 @@
 </div>
 <div class="container usersetting">
 	<div class="left-block">
-		<div class="border-box">
-			<div class="box-container">
-				<div class="box-header">
-					<a class="img_text" href=""><img src="/resource/images/test.jpg">redback1020</a>
-				</div>
-				<div class="box-body">
-					<ul class="menu">
-						<li>
-							<a class="selected" href="">基本资料</a>
-						</li>
-						<li>
-							<a href="">帐号绑定</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+		<?php $this->load->view('/setting/setting-left'); ?>
 	</div>
 	<div class="right-block">
 		<div class="border-box">
 			<div class="box-container">
 				<div class="box-header">基础资料</div>
-				<div class="box-body setting-form">
+				<div class="box-body form_table">
 					<dl>
 						<dt>
 							<label>头像</label>
@@ -38,7 +22,7 @@
 							<div class="upload-avatar">
 								<img src="/resource/images/test.jpg">
 								<a class="actionbutton-gray">选择一张图片</a>
-								<p>推荐你选择大于200x200正方形图片，文件类型jpg,jpeg,gif</p>
+								<p class="tip">推荐你选择大于200x200正方形图片，文件类型jpg,jpeg,gif</p>
 							</div>
 							
 						</dd>
@@ -72,4 +56,3 @@
 	</div>
 	<div class="clear"></div>
 </div>
-<?php $this->load->view('/public/general-foot'); ?>	

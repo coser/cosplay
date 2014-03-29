@@ -2,10 +2,9 @@
 <div class="general-pageheader">
 	<div class="container">
 		<h1 class="navigate">cos社团</h1>
-		<a href="" class="actionbutton-gray">设置</a>
 		<ul>
-			<li><a href="">社团作品</a></li>
-			<li><a href="">成员列表</a></li>
+			<li><a href="/societies/coswork">社团作品</a></li>
+			<li><a href="/societies/members">社团成员</a></li>
 		</ul>
 		<div class="clear"></div>
 	</div>

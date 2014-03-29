@@ -29,4 +29,15 @@ class Societies extends CI_Controller {
 		
 		$this->load->view('societies/societies-info');
 	}
+	
+	public function coswork(){
+		
+		
+		$this->load->view('societies/societies-coswork');
+	}
+	
+	public function members(){
+		
+		$this->load->view('societies/societies-members');
+	}
 }

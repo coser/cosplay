@@ -9,38 +9,23 @@
 	<div class="left-block">
 		<dl class="showinfo-list">
 			<dd>
-				<p>2014/4/2</p>
+				<p>上传于&nbsp;&nbsp;2014/4/2</p>
 				<ul>
 					<li><img src="/resource/images/test.jpg"></li>
 					<li><img src="/resource/images/test.jpg"></li>
-				</ul>
-				<div class="clear"></div>
-			</dd>
-			<dd>
-				<p>2014/4/2</p>
-				<ul>
 					<li><img src="/resource/images/test.jpg"></li>
 					<li><img src="/resource/images/test.jpg"></li>
 				</ul>
-				<div class="clear"></div>
-			</dd>
-			<dd>
-				<p>2014/4/2</p>
-				<ul>
-					<li><img src="/resource/images/test.jpg"></li>
-					<li><img src="/resource/images/test.jpg"></li>
-				</ul>
-				<div class="clear"></div>
-			</dd>
-			<dd>
-				<p>2014/4/2</p>
-				<ul>
-					<li><img src="/resource/images/test.jpg"></li>
-					<li><img src="/resource/images/test.jpg"></li>
-				</ul>
-				<div class="clear"></div>
 			</dd>
 		</dl>
+		<div class="timeline">
+			<ul>
+				<li><a class="selected" href="">2014/04/02</a></li>
+				<li><a href="">2014/03/29</a></li>
+				<li><a href="">2014/03/02</a></li>
+				<li><a href="">2014/02/15</a></li>
+			</ul>
+		</div>
 	</div>
 	<div class="right-block">
 		<div class="general-baseinfo-box">
