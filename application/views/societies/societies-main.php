@@ -2,10 +2,6 @@
 <div class="general-pageheader">
 	<div class="container">
 		<h1 class="title">cos社团<span>Societies</span></h1>
-		<ul>
-			<li><a href="">社团招募</a></li>
-			<li><a href="">二手交易</a></li>
-		</ul>
 		<div class="clear"></div>
 	</div>
 </div>

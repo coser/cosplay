@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Societies extends CI_Controller {
+class Recruit extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -20,29 +20,9 @@ class Societies extends CI_Controller {
 	public function index()
 	{
 		
-		$this->load->view('societies/societies-main');
-	}
-	
-	
-	public function info(){
-		
-		
-		$this->load->view('societies/societies-info');
-	}
-	
-	public function coswork(){
-		
-		
-		$this->load->view('societies/societies-coswork');
-	}
-	
-	public function members(){
-		
-		$this->load->view('societies/societies-members');
-	}
-	
-	public function recruit(){
-		
-		$this->load->view('societies/societies-recruit');
+		$this->load->view('recruit/recruit-main');
 	}
 }
+
+/* End of file welcome.php */
+/* Location: ./application/controllers/welcome.php */

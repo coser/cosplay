@@ -9,6 +9,10 @@ class Setting extends CI_Controller {
 		$this->load->view('setting/user-profile');
 	}
 	
+	public function account_settings(){
+		$this->load->view('setting/account-settings');
+	}
+	
 	public function societiesprofile()
 	{
 		

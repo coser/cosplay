@@ -12,6 +12,7 @@
 			<a class="logo" href="/main"><img src="/resource/images/logo.png"</a>
 			<ul class="actions">
 				<li><a href="/setting/userprofile">设置</a></li>
+				<li><a href="/management">管理</a></li>
 				<li><a href="">退出</a></li>
 			</ul>
 			<a class="actionbutton-gray img_text" href="/user">
@@ -21,6 +22,7 @@
 			<ul class="menu">
 				<li><a href="/show">cos图集</a></li>
 				<li><a href="/societies">cos社团</a></li>
+				<!--<li><a href="/recruit">招募</a></li>-->
 			</ul>
 			<div class="clear"></div>
 		</div>
