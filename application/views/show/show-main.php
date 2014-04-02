@@ -11,110 +11,75 @@
 		<div class="clear"></div>
 	</div>
 </div>
-<div class="container showmain">
-	<div class="left-block">
-		<p class="showmain-category-tips"><a href="">分类少了请告诉我们</a></p>
-		<dl class="showmain-category-list">
-			<dd>
-				<p class="letter">A</p>
-				<ul>
-					<li>
-						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>
-					</li>
-					<li>
-						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>		
-					</li>
-					<li>
-						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>		
-					</li>
-					<li>
-						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>		
-					</li>
-					<li>
-						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>		
-					</li>
-					<li>
-						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>		
-					</li>
-					<li>
-						<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>		
-					</li>
-					<div class="clear"></div>
-				</ul>
+<div class="container showmain">	
+	<dl class="showmain-category-list">
+		<dd>
+			<p class="letter">A</p>
+			<ul>
+				<li>
+					<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>
+				</li>
+				<li>
+					<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>		
+				</li>
+				<li>
+					<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>		
+				</li>
+				<li>
+					<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>		
+				</li>
+				<li>
+					<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>		
+				</li>
+				<li>
+					<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>		
+				</li>
+				<li>
+					<a  class="cover" href=""><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>		
+				</li>
 				<div class="clear"></div>
-			</dd>
-			<dd>
-				<p class="letter">B</p>
-				<ul>
-					<li>
-						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>
-					</li>
-					<li>
-						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>
-					</li>
-					<div class="clear"></div>
-				</ul>
+			</ul>
+			<div class="clear"></div>
+		</dd>
+		<dd>
+			<p class="letter">B</p>
+			<ul>
+				<li>
+					<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>
+				</li>
+				<li>
+					<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>
+				</li>
 				<div class="clear"></div>
-			</dd>
-			<dd>
-				<p class="letter">C</p>
-				<ul>
-					<li>
-						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>
-					</li>
-					<li>
-						<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
-						<p class="cname"><a href="">海贼王</a></p>
-					</li>
-					<div class="clear"></div>
-				</ul>
+			</ul>
+			<div class="clear"></div>
+		</dd>
+		<dd>
+			<p class="letter">C</p>
+			<ul>
+				<li>
+					<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>
+				</li>
+				<li>
+					<a  class="cover" href="/show/catelist"><img src="/resource/images/test.jpg" /></a>
+					<p class="cname"><a href="">海贼王</a></p>
+				</li>
 				<div class="clear"></div>
-			</dd>
-		</dl>
-	</div>
-	<div class="right-block">
-		<div class="please-action-box">
-			<p>上传你的作品分享它们</p>
-			<a class="actionbutton-green" href="">上传cos作品</a>
-		</div>
-		<div class="box">
-			<div class="box-header">
-				<h3>最新上传<span>Newest</span></h3>
-			</div>
-			<div class="box-body">
-				<ul class="box-ul-list showmain-newest">
-					<li>
-						<a href=""><img class="cover" src="/resource/images/test.jpg" /></a>
-						<div class="info">
-							<a class="img_text" href=""><img class="avatar"  src="/resource/images/test.jpg" />redback1020</a>
-							<p>动漫<span>/</span>海贼王</p>
-							<p>1小时前上传</p>
-						</div>
-						<div class="clear"></div>
-					</li>
-					<li>
-						<a href=""><img class="cover" src="/resource/images/test.jpg" /></a>
-						<div class="info">
-							<a class="img_text" href="/"><img class="avatar"  src="/resource/images/test.jpg" />redback1020</a>
-							<p>动漫<span>/</span>海贼王</p>
-							<p>1小时前上传</p>
-						</fiv>
-						<div class="clear"></div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="clear"></div>
+			</ul>
+			<div class="clear"></div>
+		</dd>
+	</dl>
+	<p class="showmain-category-tips"><a href="">分类少了请告诉我们</a></p>
+
 </div>
 <?php $this->load->view('/public/general-foot'); ?>	

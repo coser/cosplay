@@ -1,5 +1,5 @@
 html { background: none repeat scroll 0 0 #FFFFFF; color: #000000;}
-body{ font-family:Microsoft YaHei,MicrosoftJhengHei; background-color: #FFF; font-size: 12px }
+body{ font-family:Helvetica,arial,'宋体'; background-color: #FFF; font-size: 12px }
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0;padding: 0;}
 table { border-collapse: collapse; border-spacing: 0;}
 fieldset, img { border: 0 none;}
@@ -9,9 +9,6 @@ a{text-decoration: none;color:#000}
 a:hover{color: rgb(65, 131, 196);}
 
 
-* {
-    -moz-box-sizing: border-box;
-}
 .clear{clear: both;height: 0px;}
 .container{width: 980px;margin: 0px auto}
 .hr{border-bottom: 1px solid rgb(238,238,238)}
@@ -44,6 +41,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
     white-space: nowrap;
     background-color: rgb(238, 238, 238);
     background-image: linear-gradient(rgb(252, 252, 252), rgb(238, 238, 238));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgb(252, 252, 252)), to(rgba(238, 238, 238))) ;
     background-repeat: repeat-x;
     border-radius: 3px;
     border: 1px solid rgb(213, 213, 213);
@@ -57,6 +55,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .actionbutton-gray:hover{
     background-color: rgb(221, 221, 221);
     background-image: linear-gradient(rgb(238, 238, 238), rgb(221, 221, 221));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgb(238, 238, 238)), to(rgba(221, 221, 221))) ;
     background-repeat: repeat-x;
     color: rgb(85, 85, 85);
 }
@@ -72,6 +71,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
     white-space: nowrap;
     background-color: rgb(86, 158, 61);
     background-image: linear-gradient(rgb(121, 216, 88), rgb(86, 158, 61));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgb(121, 216, 88)), to(rgba(86, 158, 61))) ;
     background-repeat: repeat-x;
     border-color: rgb(74, 153, 62); 
     border-radius: 3px;
@@ -84,6 +84,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .actionbutton-green:hover{
     background-color: rgb(96, 176, 68);
     background-image: linear-gradient(rgb(138, 221, 109), rgb(96, 176, 68));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgb(138, 221, 109)), to(rgba(96, 176, 68))) ;
     background-repeat: repeat-x;
     color: rgb(255, 255, 255);
 }
@@ -102,6 +103,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
     white-space: nowrap;
     background-color: rgb(238, 238, 238);
     background-image: linear-gradient(rgb(252, 252, 252), rgb(238, 238, 238));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgb(252, 252, 252)), to(rgba(238, 238, 238))) ;
     background-repeat: repeat-x;
     border-top: 1px solid rgb(213, 213, 213);
     border-bottom: 1px solid rgb(213, 213, 213);
@@ -113,6 +115,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .button-group a:hover{
     background-color: rgb(221, 221, 221);
     background-image: linear-gradient(rgb(238, 238, 238), rgb(221, 221, 221));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgb(238, 238, 238)), to(rgba(221, 221, 221))) ;
     background-repeat: repeat-x;
     color: rgb(85, 85, 85);
 }
@@ -152,6 +155,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
     border-bottom: 1px solid #ccc;height: 45px;
     background-color: rgb(243, 243, 243);
     background-image: linear-gradient(rgb(249, 249, 249), rgb(243, 243, 243));
+    background:-webkit-gradient(linear, 0 0, 0 bottom, from(rgb(249, 249, 249)), to(rgba(243, 243, 243))) ;
     background-repeat: repeat-x;}
 .general-header a.logo img{ width: 35px;height: 30px;float: left;margin-top: 6px }
 .general-header ul.menu{float: right;margin-right:50px;}
@@ -164,10 +168,11 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .general-header ul.actions li a:hover{color: rgb(65, 131, 196);}
 
 /*通用foot*/
-.general-foot{margin-top: 50px;border-top:1px solid rgb(238, 238, 238)}
+.general-foot{margin-top: 50px;border-top:1px solid rgb(238, 238, 238);position:relative}
 .general-foot ul li{line-height: 100px;float: left;margin-right: 30px;color: rgb(119, 119, 119)}
 .general-foot .links a{color: rgb(65, 131, 196);}
-
+.general-foot .proposal－button{position: absolute;top: 33%;right: 10px;}
+.general-foot .proposal－button img{width:21px;height: 18px}
 
 /*通用title*/
 .general-title{margin-bottom: 5px;overflow: hidden;height: 30px}
@@ -178,6 +183,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 /*通用pageheader*/
 .general-pageheader{height: 81px;border-bottom: 1px solid rgb(238, 238, 238);margin-bottom: 20px}
 .general-pageheader h1{font: 22px;line-height:80px;display: inline-block;float: left}
+.general-pageheader img{width: 30px;height: 30px;float: left;}
 .general-pageheader h1.title span{font-size: 20px;color: rgb(128, 128, 128);margin: 0px 5px}
 .general-pageheader h1.navigate a{color: rgb(65, 131, 196)}
 .general-pageheader h1.navigate span{margin: 0px 10px;font-weight: normal}
@@ -188,6 +194,24 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .general-pageheader ul li{float: left}
 .general-pageheader ul li a{display:block;border-bottom: 2px solid #fff; font-size: 14px;line-height: 78px;margin: 0px 10px}
 .general-pageheader ul li a.selected{border-bottom-color: rgb(210, 105, 17);}
+
+
+/*通用评论*/
+.general-comment textarea{resize: none;width: 100%;height: 50px;border: 1px solid #ccc;border-radius: 3px;padding: 5px; color:rgb(128, 128, 128); font-size: 12px}
+.general-comment form p{color: rgb(128, 128, 128);float: right;display: inline-block;line-height: 32px}
+.general-comment form button{float: left;padding: 3px 5px;margin-top: 3px;margin-right: 3px}
+
+.general-comment .item {width: 100%;border-bottom: 1px solid rgb(238, 238, 238);padding:10px 0px;overflow: hidden}
+.general-comment .item .avatar{ float: left}
+.general-comment .item .avatar img{width: 40px;height: 40px;}
+.general-comment .item .info{padding: 0px 5px;}
+.general-comment .item .info em{color: rgb(128, 128, 128);margin-left: 10px}
+.general-comment .item .info .content{padding: 0px 5px 0px 5px;line-height: 22px;color: rgb(128, 128, 128);overflow: hidden}
+.general-comment .item .info .uname{color:#000;font-weight: bold;font-size: 14px;margin-left: 5px}
+.general-comment .item .info .uname:hover{color: rgb(65, 131, 196)}
+.general-comment .reply{margin-left: 37px}
+.general-comment .reply  .item {padding: 10px;background: #f5f5f5;margin-bottom: 5px;border-bottom: none;}
+.general-comment .reply  .item .avatar img{width: 30px;height: 30px;}
 
 
 /*通用box*/
@@ -277,11 +301,12 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .general-baseinfo-box .box-body .data-with-icon{overflow: hidden}
 .general-baseinfo-box .box-body .data-with-icon img{width: 12px;height: 12px;float: left}
 .general-baseinfo-box .box-body .data-with-icon span{float: left;color:rgb(128, 128, 128);margin:0px 10px}
-.general-baseinfo-box .box-body table{width: 100%;}
+.general-baseinfo-box .box-body table{width: 100%;margin-top: 5px}
 .general-baseinfo-box .box-body table tr td{font-size:14px;line-height: 20px;color: rgb(128, 128, 128);padding: 5px 0px}
-.general-baseinfo-box .box-body table tr td.title{width: 50px;color: rgb(0,0,0)}
+.general-baseinfo-box .box-body table tr td.title{width: 60px;color: rgb(0,0,0)}
 .general-baseinfo-box .box-body table tr td .avatar{width: 20px;height: 20px;float: left;margin-right: 5px}
 .general-baseinfo-box .box-body table tr td a{line-height: 20px;float: left}
+.general-baseinfo-box .box-body table tr td .img_text{color: rgb(65, 131, 196)}
 
 .general-baseinfo-box .box-bottom{padding:10px 0px;border-top: 1px solid rgb(238,238,238);}
 
@@ -344,8 +369,8 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .showmain-category-tips a{color:rgb(65, 131, 196)}
 
 .showmain-category-list dd p.letter{width: 30px;font: 22px bold;float: left}
-.showmain-category-list dd ul{float: left;width: 620px}
-.showmain-category-list dd ul li{margin:0px 20px 10px 20px;float: left}
+.showmain-category-list dd ul{overflow: hidden;margin-left: 10px}
+.showmain-category-list dd ul li{margin:0px 20px 10px 0px;float: left}
 .showmain-category-list dd ul li p{text-align: center;line-height: 22px}
 .showmain-category-list dd ul li .cover{display: inline-block;border: 2px solid #ccc;padding:1px}
 .showmain-category-list dd ul li .cover,.showmain-category-list dd ul li .cover img{
@@ -353,7 +378,7 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 -moz-border-radius: 60px;-moz-box-sizing: content-box;}
 .showmain-category-list  dd{margin-bottom: 30px;border-bottom: 1px solid rgb(238, 238, 238);}
 
-.showmain .right-block .please-action-box{margin-bottom: 20px}
+
 .showmain-newest li{padding: 15px}
 .showmain-newest li img.cover{float: left;width: 60px;height: 60px;margin-right: 10px}
 .showmain-newest li .info span{margin: 0px 10px}
@@ -361,9 +386,9 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .showmain-newest li .info p{line-height: 22px;color: rgb(128, 128, 128);}
 
 
-.showcatelist .right-block ul{border-left: 1px solid rgb(238, 238, 238);}
-.showcatelist .right-block ul li a.selected{border-left-color:rgb(210, 105, 17);color:#000}
-.showcatelist .right-block ul li a{ display: block;border-left:2px solid #fff;line-height: 25px;padding-left:20px;color: rgb(65, 131, 196);}
+.showcatelist .showcatelist-cate-list {border-left: 1px solid rgb(238, 238, 238);margin-bottom: 20px}
+.showcatelist .showcatelist-cate-list li a.selected{border-left-color:rgb(210, 105, 17);color:#000}
+.showcatelist .showcatelist-cate-list li a{ display: block;border-left:2px solid #fff;line-height: 25px;padding-left:20px;color: rgb(65, 131, 196);}
 
 /*showinfo*/
 .showinfo .left-block{position: relative}
@@ -373,20 +398,6 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .showinfo .timeline ul{border-right: 2px solid rgb(238, 238, 238);padding-bottom:30px}
 .showinfo .timeline ul li a{width: 150px;font-size:14px;color:rgb(128, 128, 128);display: block;padding: 10px;border-right: 2px solid rgb(255, 255, 255);}
 .showinfo .timeline ul li a.selected,.showinfo .timeline ul li a:hover{color:rgb(0,0,0);font-size:22px;border-right-color:rgb(210, 105, 17)}
-
-
-
-.showinfo .comment{margin-top:20px;}
-.showinfo .comment textarea{resize: none;width: 100%;height: 50px;border: 1px solid #ccc;border-radius: 3px;padding: 5px; color:rgb(128, 128, 128); font-size: 12px}
-.showinfo .comment form p{color: rgb(128, 128, 128);float: right;display: inline-block;line-height: 32px}
-.showinfo .comment form button{float: left;padding: 3px 5px;margin-top: 3px;margin-right: 3px}
-.showinfo .comment ul{margin-top:20px}
-.showinfo .comment ul li{border-bottom: 1px solid rgb(238, 238, 238);padding: 15px 0px}
-.showinfo .comment ul li .avatar{float: left;width: 30px;height: 30px;}
-.showinfo .comment ul li .content{float: left;width: 240px}
-.showinfo .comment ul li .content{color: rgb(128, 128, 128);line-height: 22px;padding-left: 5px}
-.showinfo .comment ul li .content a{color:#000;font-weight: bold;margin-right:10px}
-.showinfo .comment ul li .reply{text-align: left;margin-top:5px;margin-left: 30px;padding:0px 5px;float: left;width: 240px;background: rgb(245, 245, 245);line-height: 22px}
 
 
 /*societies-main*/
@@ -465,32 +476,33 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 .management-show-list dd{padding-bottom: 10px;display: none}
 .management-show-list dd.selected{display:block}
 
-
-.management-show-list table td{line-height: 30px; vertical-align: middle;padding: 5px 10px;}
+.management-show-list table{width: 100%;}
+.management-show-list table td{line-height: 30px; vertical-align: middle;padding: 2px 10px}
 .management-show-list table td .actionbutton-gray{padding: 4px 6px;margin-left:5px}
-.management-show-list table td{padding: 2px 10px; }
+.management-show-list table td{}
 .management-show-list table td img{width: 30px;height: 30px;float: left}
 
 .management-show-list table tr{border-bottom: 1px solid rgb(238,238,238)}
-.management-show-list table tr td.first-child{width: 170px}
+.management-show-list table tr td.first-child{width: 125px;}
 .management-show-list table tr td.first-child h3{font: 14px #000;}
 .management-show-list table tr td.middle-child{width: 370px;color: #808080}
 
 
 /*managemengt-members-list*/
 .managemengt-members-list tr{border-bottom: 1px solid rgb(238,238,238)}
-.managemengt-members-list td{vertical-align: middle;padding: 5px 10px;}
-.managemengt-members-list td.first-child{width: 170px}
-.managemengt-members-list td.middle-child{width: 370px;color: #808080}
+.managemengt-members-list td{vertical-align: middle;padding: 5px 10px}
+.managemengt-members-list td.first-child{width: 125px;}
+.managemengt-members-list td.first-child a{float: left}
+.managemengt-members-list td.middle-child{width: 370px;color: #808080;}
 .managemengt-members-list td .img_text{float: left}
-.managemengt-members-list td .actionbutton-gray{padding: 4px 6px;margin-left:5px}
+.managemengt-members-list td .actionbutton-gray{padding: 4px 6px;margin-left:5px;float: left}
 
 
 /*management-coswork-upload-block*/
 .management-coswork-upload-block{ margin-top: 15px}
 .management-coswork-upload-block tr{border-bottom: 1px solid rgb(238,238,238);}
 .management-coswork-upload-block tr td{padding: 5px 10px;vertical-align: middle;}
-.management-coswork-upload-block tr td.first-child{width: 150px;}
+.management-coswork-upload-block tr td.first-child{width: 125px;}
 .management-coswork-upload-block tr td.first-child img{width: 50px;height: 50px}
 .management-coswork-upload-block tr td.file-name{width: 150px;color: #808080;font-size: 14px}
 .management-coswork-upload-block tr td.progress-bar{width: 210px}
@@ -502,3 +514,14 @@ h4{font-size:22px;color: rgb(85, 85, 85); margin-bottom: 15px}
 
 /*mamagement-coswork-upload-info*/
 .mamagement-coswork-upload-info .input{width: 150px}
+
+
+/*ucenter*/
+.ucenter .general-show-list li{margin-right: 35px}
+
+.ucenter-pageheader{height: 81px;border-bottom: 1px solid rgb(238, 238, 238);margin-bottom: 20px}
+.ucenter-pageheader .uinfo {float: left;line-height: 80px;display: inline-block;font-size: 22px;font-weight: bold}
+.ucenter-pageheader .uinfo img{width: 50px; height: 50px;margin: 15px 10px 0px 0px;float: left}
+.ucenter-pageheader ul{float: left;margin-left: 10px}
+.ucenter-pageheader ul li{line-height: 80px;font-size: 12px;float: left;color: #808080}
+.ucenter-pageheader ul li span{font-weight: bold;margin: 0px 10px;color: rgb(85, 85, 85)}

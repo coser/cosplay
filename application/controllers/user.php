@@ -29,4 +29,10 @@ class User extends CI_Controller {
 		
 		$this->load->view('user/user-coswork');
 	}
+	
+	public function ucenter(){
+		
+		
+		$this->load->view('user/user-ucenter');
+	}
 }

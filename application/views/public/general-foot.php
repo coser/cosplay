@@ -7,6 +7,9 @@
 			<li><a href="">关于我们</a></li>
 			<div class="clear"></div>
 		</ul>
+		<a class="actionbutton-gray img_text proposal－button" href="/proposal">
+			<img class="avatar" src="/resource/images/logo.png">WeAreCoser 意见箱
+		</a>
 	</div>
 </div>
 </body>
